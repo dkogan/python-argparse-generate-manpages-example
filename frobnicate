@@ -1,0 +1,36 @@
+#!/usr/bin/python2
+
+r'''Frobnicates foos into bars
+
+Synopsis:
+
+  $ frobnicate --param 5 a.foo > a.bar
+
+    Done!
+
+This tool does things in some way. And here I describe just how it does it!
+
+'''
+
+import argparse
+
+
+def parse_args():
+    parser = \
+        argparse.ArgumentParser(description = __doc__,
+                                formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('--param',
+                        type=float,
+                        default=5,
+                        required=True,
+                        help='Parameter to adjust how the frobnicator works')
+    parser.add_argument('input',
+                        type=str,
+                        nargs='+',
+                        help='''Inputs to process''')
+
+    return parser.parse_args()
+
+
+
+args = parse_args()

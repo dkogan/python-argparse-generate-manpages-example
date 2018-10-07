@@ -1,0 +1,13 @@
+=head1 REPOSITORY
+
+L<https://something/something/something>
+
+=head1 AUTHOR
+
+Dima Kogan, C<< <dima@secretsauce.net> >>
+
+=head1 LICENSE AND COPYRIGHT
+
+Copyright blah blah blah
+
+Licensed in some way
